@@ -8246,6 +8246,11 @@ footer {
     padding-right: 1.5rem;
   }
 
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
   .lg\:pt-\[300px\] {
     padding-top: 300px;
   }
@@ -8383,6 +8388,10 @@ footer {
     display: grid;
   }
 
+  .xl\:min-h-\[60vh\] {
+    min-height: 60vh;
+  }
+
   .xl\:gap-16 {
     gap: 4rem;
   }
@@ -8476,6 +8485,14 @@ footer {
 
   .xl\:pt-32 {
     padding-top: 8rem;
+  }
+
+  .xl\:pt-\[216px\] {
+    padding-top: 216px;
+  }
+
+  .xl\:pb-10 {
+    padding-bottom: 2.5rem;
   }
 
   .xl\:text-base {

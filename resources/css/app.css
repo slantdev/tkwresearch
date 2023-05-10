@@ -1,0 +1,9 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import 'partials/buttons.css';
+@import 'partials/typography.css';
+@import 'partials/components.css';
+@import 'partials/site-header.css';
+@import 'partials/site-footer.css';

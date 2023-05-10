@@ -1,0 +1,5 @@
+<svg id="check-circle" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <rect id="check-circle-2" data-name="check-circle" width="24" height="24" fill="none"/>
+  <path id="Vector" d="M20,9.086v.92A10,10,0,1,1,14.07.866" transform="translate(2 1.994)" fill="none" stroke="#0583ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+  <path id="Vector-2" data-name="Vector" d="M13,0,3,10.01l-3-3" transform="translate(9 4)" fill="none" stroke="#0583ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+</svg>

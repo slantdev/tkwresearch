@@ -51,9 +51,9 @@ $description = get_sub_field('description');
             $link = $card['link'];
             ?>
             <?php if (isset($link['url'])) {
-              echo '<a href="' . $link['url'] . '" class="relative block bg-white rounded-lg pl-8 pt-8 pr-16 pb-16 shadow-[0_0_20px_rgb(225,228,237,1)] hover:shadow-[0_0_24px_rgb(0,0,0,0.16)] transition duration-300">';
+              echo '<a href="' . $link['url'] . '" class="relative block bg-white rounded-lg p-8 shadow-[0_0_20px_rgb(225,228,237,1)] hover:shadow-[0_0_24px_rgb(0,0,0,0.16)] transition duration-300">';
             } else {
-              echo '<div class="relative block bg-white rounded-lg pl-8 pt-8 pr-8 pb-8 shadow-[0_0_20px_rgb(225,228,237,1)]">';
+              echo '<div class="relative block bg-white rounded-lg p-8 shadow-[0_0_20px_rgb(225,228,237,1)]">';
             } ?>
 
             <?php if ($icon_svg) { ?>
@@ -70,11 +70,6 @@ $description = get_sub_field('description');
               </div>
             <?php } ?>
 
-            <?php if (isset($link['url'])) {
-              echo '<div class="absolute bottom-6 right-6">';
-              echo tkw_icon(array('icon' => 'chevron', 'group' => 'utilities', 'size' => '24', 'class' => 'text-brand-orange'));
-              echo '</div>';
-            } ?>
             <?php if (isset($link['url'])) {
               echo '</a>';
             } else {

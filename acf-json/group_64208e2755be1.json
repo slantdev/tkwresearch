@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_64208e275a420",
-            "label": "Cards",
+            "label": "Items",
             "name": "info_cards",
             "aria-label": "",
             "type": "repeater",
@@ -16,13 +16,14 @@
                 "class": "",
                 "id": ""
             },
+            "acfe_save_meta": 0,
             "acfe_repeater_stylised_button": 1,
             "layout": "block",
             "pagination": 0,
             "min": 0,
             "max": 0,
             "collapsed": "field_64208e275c33a",
-            "button_label": "Add Card",
+            "button_label": "Add Item",
             "rows_per_page": 20,
             "sub_fields": [
                 {
@@ -149,7 +150,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1679935646,
+    "modified": 1683780854,
     "acfe_categories": {
         "components": "Components"
     }

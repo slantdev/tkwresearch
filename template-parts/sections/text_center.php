@@ -35,7 +35,7 @@ if ($text_color == 'white') {
 <section id="<?php echo $section_id ?>" style="<?php echo $section_style ?>">
   <div class="relative <?php echo $section_padding_top . ' ' . $section_padding_bottom ?>">
     <div class="container max-w-screen-xl">
-      <div class="text-center">
+      <div class="text-center max-w-screen-lg mx-auto">
         <?php if ($sub_headline) { ?>
           <h3 class="text-lg pb-4 border-b-2 inline-block mt-12 mx-auto <?php echo $sub_headline_class ?>"><?php echo $sub_headline ?></h3>
         <?php } ?>

@@ -77,11 +77,11 @@ if (have_rows('section', $the_id)) :
     // elseif (get_row_layout() == 'contact_form_1') :
     //   get_template_part('template-parts/sections/contact_form_1');
 
-    // elseif (get_row_layout() == 'contact_form_2') :
-    //   get_template_part('template-parts/sections/contact_form_2');
+    elseif (get_row_layout() == 'contact_form') :
+      get_template_part('template-parts/sections/contact_form');
 
-    // elseif (get_row_layout() == 'contact_center') :
-    //   get_template_part('template-parts/sections/contact_center');
+    elseif (get_row_layout() == 'contact_center') :
+      get_template_part('template-parts/sections/contact_center');
 
     elseif (get_row_layout() == 'knowledge_box_grid') :
       get_template_part('template-parts/sections/knowledge_box_grid');

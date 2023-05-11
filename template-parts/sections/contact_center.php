@@ -30,7 +30,7 @@ $contact_center = get_sub_field('contact_center');
         echo '<div class="flex items-center gap-x-16">';
 
         if ($headline) :
-          echo '<div class="w-1/2"><h2 class="text-brand-blue text-[34px] font-bold">' . $headline . '</h2></div>';
+          echo '<div class="w-1/2"><h2 class="text-brand-red text-[34px] font-bold">' . $headline . '</h2></div>';
         endif;
 
         if ($description) :

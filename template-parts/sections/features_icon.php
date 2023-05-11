@@ -23,12 +23,14 @@ $description = get_sub_field('description');
         </div>
       <?php } ?>
       <?php if ($headline) { ?>
-        <div class="max-w-prose mx-auto mt-12 mb-12">
+        <div class="max-w-prose mx-auto mt-12">
           <h2 class="text-brand-red text-[34px] font-bold"><?php echo $headline ?></h2>
         </div>
       <?php } ?>
       <?php if ($description) { ?>
-        <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'font-nunito text-lg text-brand-gray mx-auto')); ?>
+        <div class="mb-12 max-w-lg mx-auto">
+          <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'font-nunito text-lg text-brand-gray mx-auto')); ?>
+        </div>
       <?php } ?>
     </div>
 

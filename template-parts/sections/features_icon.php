@@ -62,7 +62,7 @@ $description = get_sub_field('description');
             <?php } ?>
 
             <?php if ($description) { ?>
-              <div class="font-nunito mt-12 max-w-md mx-auto">
+              <div class="font-nunito mt-6 max-w-md mx-auto">
                 <?php echo $description ?>
               </div>
             <?php } ?>

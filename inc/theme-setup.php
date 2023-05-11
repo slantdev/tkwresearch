@@ -296,11 +296,11 @@ add_action('init', 'tkw_cpt');
  */
 function tkw_taxonomies()
 {
-  register_taxonomy('industry', array(
+  register_taxonomy('service_category', array(
     'services',
   ), array(
-    'name' => 'industry',
-    'label' => 'Industry',
+    'name' => 'service_category',
+    'label' => 'service_category',
     'active' => true,
     'post_types' => array(
       'services',

@@ -300,7 +300,7 @@ function tkw_taxonomies()
     'services',
   ), array(
     'name' => 'service_category',
-    'label' => 'service_category',
+    'label' => 'Service Category',
     'active' => true,
     'post_types' => array(
       'services',

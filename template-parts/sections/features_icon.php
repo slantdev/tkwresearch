@@ -28,7 +28,7 @@ $description = get_sub_field('description');
         </div>
       <?php } ?>
       <?php if ($description) { ?>
-        <div class="mt-12 max-w-md mx-auto">
+        <div class="mt-12">
           <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'font-nunito text-lg text-brand-gray mx-auto')); ?>
         </div>
       <?php } ?>
@@ -62,7 +62,7 @@ $description = get_sub_field('description');
             <?php } ?>
 
             <?php if ($description) { ?>
-              <div class="font-nunito">
+              <div class="font-nunito mt-12 max-w-md mx-auto">
                 <?php echo $description ?>
               </div>
             <?php } ?>

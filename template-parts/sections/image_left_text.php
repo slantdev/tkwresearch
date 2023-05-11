@@ -21,9 +21,10 @@ $lead_text = get_sub_field('lead_text');
         <?php get_template_part('template-parts/components/image', '', array('aspect_w' => '1', 'aspect_h' => '1', 'class' => 'h-full w-full object-center object-cover')); ?>
       </div>
       <div class="w-full order-2 <?php echo $column_text_class ?>">
+        <?php get_template_part('template-parts/components/heading', '', array('field' => 'content_heading', 'class' => 'leading-[1.3] font-bold')); ?>
         <?php if ($lead_text) : ?>
           <div class="prose max-w-none xl:prose-lg mb-[1.25em] xl:mb-[1.3333em]">
-            <p class="lead"><?php echo $lead_text ?></p>
+            <p class="text-xl lg:text-2xl text-black"><?php echo $lead_text ?></p>
           </div>
         <?php endif; ?>
         <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'max-w-none xl:prose-lg')); ?>

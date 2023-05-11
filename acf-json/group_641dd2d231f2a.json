@@ -181,6 +181,52 @@
                     "acfe_flexible_settings_size": "medium",
                     "acfe_flexible_category": false
                 },
+                "layout_645c5490480db": {
+                    "key": "layout_645c5490480db",
+                    "name": "cta_image",
+                    "label": "CTA + Image",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_645c5490480dc",
+                            "label": "CTA + Image",
+                            "name": "cta_image",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "clone": [
+                                "group_645c5424b6bac"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
+                    "acfe_flexible_modal_edit_size": "medium",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_category": false
+                },
                 "layout_645aa40070c69": {
                     "key": "layout_645aa40070c69",
                     "name": "features_icon",
@@ -474,6 +520,52 @@
                             },
                             "clone": [
                                 "group_6421e379128da"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0,
+                            "acfe_seamless_style": 0,
+                            "acfe_clone_modal": 0,
+                            "acfe_clone_modal_close": 0,
+                            "acfe_clone_modal_button": "",
+                            "acfe_clone_modal_size": "large"
+                        }
+                    ],
+                    "min": "",
+                    "max": "",
+                    "acfe_flexible_render_template": "",
+                    "acfe_flexible_render_style": "",
+                    "acfe_flexible_render_script": "",
+                    "acfe_flexible_modal_edit_size": "medium",
+                    "acfe_flexible_thumbnail": "",
+                    "acfe_flexible_settings": false,
+                    "acfe_flexible_settings_size": "medium",
+                    "acfe_flexible_category": false
+                },
+                "layout_645c4e89476ab": {
+                    "key": "layout_645c4e89476ab",
+                    "name": "quotes",
+                    "label": "Quotes",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_645c4e89476ac",
+                            "label": "Quotes",
+                            "name": "quotes",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_save_meta": 0,
+                            "clone": [
+                                "group_645c4df199991"
                             ],
                             "display": "seamless",
                             "layout": "block",
@@ -807,7 +899,7 @@
     "acfe_form": 0,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1683770253,
+    "modified": 1683773023,
     "acfe_categories": {
         "flexible-content": "Flexible Content"
     }

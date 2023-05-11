@@ -76,6 +76,11 @@ if (have_rows('section', $the_id)) :
 
     // elseif (get_row_layout() == 'contact_form_1') :
     //   get_template_part('template-parts/sections/contact_form_1');
+    elseif (get_row_layout() == 'quotes') :
+      get_template_part('template-parts/sections/quotes');
+
+    elseif (get_row_layout() == 'cta_image') :
+      get_template_part('template-parts/sections/cta_image');
 
     elseif (get_row_layout() == 'contact_form') :
       get_template_part('template-parts/sections/contact_form');

@@ -103,6 +103,18 @@
   }
 }
 
+.quote-text {
+  @apply relative text-brand-red;
+  &:before {
+    content: '"';
+    font-size: 150px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    @apply absolute -left-10 -top-6;
+  }
+}
+
 .leadgen-form {
   @apply mt-4;
   .with_frm_style .frm_form_fields > fieldset {

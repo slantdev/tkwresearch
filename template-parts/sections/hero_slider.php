@@ -39,20 +39,25 @@ if ($hero_slider) : ?>
               <div class="flex h-full items-center text-white">
                 <div>
                   <?php if ($headline) : ?>
-                    <div class="w-1/2 py-20">
-                      <h1 class="font-bold text-[60px] leading-[1.1] after:h-3 after:absolute after:left-0 after:block after:bg-brand-blue after:w-full after:-translate-x-1/2 after:mt-8"><?php echo $headline; ?></h1>
+                    <div class="pt-20 pb-16 relative">
+                      <div class="w-3/5">
+                        <h1 class="hero-headline"><?php echo $headline; ?></h1>
+                      </div>
+                      <div class="hero-border"></div>
                     </div>
                   <?php endif; ?>
                   <div class="flex gap-x-14">
                     <?php if ($description) : ?>
                       <div class="w-1/2">
-                        <div class="text-lg font-medium">
+                        <div class="hero-description">
                           <?php echo $description; ?>
                         </div>
                       </div>
                     <?php endif; ?>
                     <div class="w-1/2 pl-20">
-                      <?php get_template_part('template-parts/components/buttons', '', array('field' => $buttons, 'class' => 'mt-4 xl:mt-4')); ?>
+                      <div class="hero-buttons">
+                        <?php get_template_part('template-parts/components/buttons', '', array('field' => $buttons, 'class' => 'mt-4 xl:mt-4')); ?>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -76,6 +81,11 @@ if ($hero_slider) : ?>
       const swiper = new Swiper('#hero-slider', {
         loop: true,
         watchOverflow: true,
+        effect: 'fade',
+        speed: 1000,
+        autoplay: {
+          delay: 8000,
+        },
         navigation: {
           nextEl: '#hero-slider .swiper-button-next',
           prevEl: '#hero-slider .swiper-button-prev',

@@ -33,77 +33,75 @@ $powered_by = $copyright['powered_by'];
       </form> -->
     </div>
 
-  </div>
+    <div class="flex gap-12">
 
-  <div class="flex gap-12">
-
-    <div class="w-5/12 pb-6 pr-12 border-r border-[#707070] text-white">
-      <a href="<?php echo site_url() ?>"><img src="<?php echo tkw_asset('images/logos/logo-reverse.svg') ?>" class="w-52 mb-6"></a>
-      <?php if ($about) : ?>
-        <div class="pb-6 mb-7 border-b-2 border-[#D8D8D8]">
-          <?php echo $about ?>
-        </div>
-      <?php endif; ?>
-      <?php if ($associations_and_accreditation) : ?>
-        <h3 class="text-base font-bold mb-4">Associations and Accreditation:</h3>
-        <div class="flex gap-4 items-center">
-          <?php foreach ($associations_and_accreditation as $logo) : ?>
-            <img class="h-auto" style="width: <?php echo $logo['logo_width_px'] ?>px;" src="<?php echo $logo['logo_image']['url'] ?>" alt="<?php echo $logo['logo_image']['alt'] ?>" />
-          <?php endforeach; ?>
-        </div>
-      <?php endif; ?>
-    </div>
-
-
-    <div class="w-7/12 text-white">
-      <div class="flex gap-x-12">
-
-        <div class="grow">
-          <?php if ($contact_info) : ?>
-            <h5 class="text-xl font-bold mb-8">Contact Info</h5>
-
-            <?php foreach ($contact_info as $contact) : ?>
-              <div class="mb-8 not-italic text-lg">
-                <div class="flex gap-3">
-                  <?php if ($contact['country'] == 'au') {
-                    echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
-                  } else if ($contact['country'] == 'nz') {
-                    echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
-                  } ?>
-                  <div class="grow">
-                    <?php if ($contact['heading']) : ?>
-                      <span class="font-semibold"><?php echo $contact['heading'] ?></span>
-                    <?php endif; ?>
-                    <?php if ($contact['address']) : ?>
-                      <br />
-                      <?php echo $contact['address'] ?>
-                  </div>
-                <?php endif; ?>
-                </div>
-              </div>
+      <div class="w-5/12 pb-6 pr-12 border-r border-[#707070] text-white">
+        <a href="<?php echo site_url() ?>"><img src="<?php echo tkw_asset('images/logos/logo-reverse.svg') ?>" class="w-52 mb-6"></a>
+        <?php if ($about) : ?>
+          <div class="pb-6 mb-7 border-b-2 border-[#D8D8D8]">
+            <?php echo $about ?>
+          </div>
+        <?php endif; ?>
+        <?php if ($associations_and_accreditation) : ?>
+          <h3 class="text-base font-bold mb-4">Associations and Accreditation:</h3>
+          <div class="flex gap-4 items-center">
+            <?php foreach ($associations_and_accreditation as $logo) : ?>
+              <img class="h-auto" style="width: <?php echo $logo['logo_width_px'] ?>px;" src="<?php echo $logo['logo_image']['url'] ?>" alt="<?php echo $logo['logo_image']['alt'] ?>" />
             <?php endforeach; ?>
-
-          <?php endif; ?>
-        </div>
-
-        <!-- column two -->
-        <div class="flex-none">
-          <?php if ($links) : ?>
-            <?php if ($footer_links_heading) : ?>
-              <h3 class="text-xl font-bold mb-8"><?php echo $footer_links_heading ?></h3>
-            <?php endif; ?>
-            <ul class="list-none text-lg leading-8">
-              <?php foreach ($links as $link) : ?>
-                <li class="pb-2"><a href="<?php echo $link['link']['url'] ?>" class="no-underline hover:underline"><?php echo $link['link']['title'] ?></a></li>
-              <?php endforeach; ?>
-            </ul>
-          <?php endif; ?>
-        </div>
-
+          </div>
+        <?php endif; ?>
       </div>
-    </div>
 
-  </div>
+
+      <div class="w-7/12 text-white">
+        <div class="flex gap-x-12">
+
+          <div class="grow">
+            <?php if ($contact_info) : ?>
+              <h5 class="text-xl font-bold mb-8">Contact Info</h5>
+
+              <?php foreach ($contact_info as $contact) : ?>
+                <div class="mb-8 not-italic text-lg">
+                  <div class="flex gap-3">
+                    <?php if ($contact['country'] == 'au') {
+                      echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
+                    } else if ($contact['country'] == 'nz') {
+                      echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
+                    } ?>
+                    <div class="grow">
+                      <?php if ($contact['heading']) : ?>
+                        <span class="font-semibold"><?php echo $contact['heading'] ?></span>
+                      <?php endif; ?>
+                      <?php if ($contact['address']) : ?>
+                        <br />
+                        <?php echo $contact['address'] ?>
+                    </div>
+                  <?php endif; ?>
+                  </div>
+                </div>
+              <?php endforeach; ?>
+
+            <?php endif; ?>
+          </div>
+
+          <!-- column two -->
+          <div class="flex-none">
+            <?php if ($links) : ?>
+              <?php if ($footer_links_heading) : ?>
+                <h3 class="text-xl font-bold mb-8"><?php echo $footer_links_heading ?></h3>
+              <?php endif; ?>
+              <ul class="list-none text-lg leading-8">
+                <?php foreach ($links as $link) : ?>
+                  <li class="pb-2"><a href="<?php echo $link['link']['url'] ?>" class="no-underline hover:underline"><?php echo $link['link']['title'] ?></a></li>
+                <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
   </div>
   <section class="bg-[#E9EBF2]">
     <div class="container max-w-screen-xl mx-auto py-6 flex justify-between">

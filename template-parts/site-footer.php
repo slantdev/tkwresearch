@@ -61,12 +61,14 @@ $powered_by = $copyright['powered_by'];
               <h5 class="text-xl font-bold mb-8">Contact Info</h5>
 
               <?php foreach ($contact_info as $contact) : ?>
-                <div class="mb-8 not-italic text-lg">
+                <div class="mb-8 not-italic text-lg t">
                   <div class="flex gap-3">
                     <?php if ($contact['country'] == 'au') {
-                      echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
+                      //echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
+                      echo tkw_icon(array('icon' => 'pinmap', 'group' => 'utilities', 'size' => '24', 'class' => 'mt-0.5'));
                     } else if ($contact['country'] == 'nz') {
-                      echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
+                      //echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
+                      echo tkw_icon(array('icon' => 'pinmap', 'group' => 'utilities', 'size' => '24', 'class' => 'mt-0.5'));
                     } ?>
                     <div class="grow">
                       <?php if ($contact['heading']) : ?>

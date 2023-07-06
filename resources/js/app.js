@@ -1,10 +1,10 @@
 jQuery(function ($) {
   //the shrinkHeader variable is where you tell the scroll effect to start.
   var shrinkHeader = 100;
-  //headerShrink();
+  headerShrink();
   $(window).scroll(function () {
     //console.log(scroll);
-    //headerShrink();
+    headerShrink();
   });
   function getCurrentScroll() {
     return window.pageYOffset || document.documentElement.scrollTop;

@@ -33,7 +33,7 @@
   </div>
 </header> -->
 
-<header class="site-header absolute w-full top-0 left-0 right-0 z-50">
+<header class="site-header fixed w-full top-0 left-0 right-0 z-50">
   <div id="top-nav" class="bg-brand-red text-white">
     <div class="top-nav--container max-w-screen-4xl mx-auto px-4 py-2 md:px-6 xl:px-8">
       <?php

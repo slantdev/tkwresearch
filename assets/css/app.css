@@ -4601,6 +4601,10 @@ h6,
   position: static;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -7917,7 +7921,7 @@ h6,
 }
 
 .site-header.header-shrink {
-  background-color: rgb(0 47 86 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.95;
 }
 

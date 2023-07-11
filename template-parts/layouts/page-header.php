@@ -60,7 +60,7 @@ if ($enabled) :
         <?php if ($hero_overlay_color) { ?>
           <div class="absolute inset-0 mix-blend-multiply" style="background-color: <?php echo $hero_overlay_color ?>"></div>
         <?php } ?>
-        <img src="<?php echo $hero_background ?>" alt="<?php echo $hero_title ?>" class="object-cover h-full w-full">
+        <img src="<?php echo $hero_background ?>" alt="" class="object-cover h-full w-full">
       </div>
     <?php } ?>
     <div class="container max-w-screen-xl relative z-10 pt-52 lg:pt-[300px] 2xl:pt-[340px] pb-16 2xl:pb-36 h-full">

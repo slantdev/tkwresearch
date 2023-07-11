@@ -30,7 +30,7 @@ $size = 'full';
       $carousel_loop = 'true';
       $carousel_autoplay_setting = '
       autoplay: {
-        delay: 5000,
+        delay: 3000,
         disableOnInteraction: false,
       }
     ';

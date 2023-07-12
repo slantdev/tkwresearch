@@ -30,14 +30,14 @@ if ($text_color == 'white') {
   $sub_headline_class = ' text-white border-white';
   $headline_class = ' text-white';
   $accordion_title_class = ' text-white border-white';
-  $accordion_content_class = ' text-white';
+  $accordion_content_class = ' text-white prose-strong:text-white';
   $red_line_separator_top = $section_settings['red_line_separator']['enable_top'] ? '<div class="absolute top-0 left-1/2 h-12 border-l border-solid border-white"></div>' : '';
   $red_line_separator_bottom = $section_settings['red_line_separator']['enable_bottom'] ? '<div class="absolute bottom-0 left-1/2 h-12 border-l border-solid border-white"></div>' : '';
 } else {
   $sub_headline_class = ' text-brand-red border-brand-red';
   $headline_class = ' text-brand-red';
   $accordion_title_class = ' text-black border-brand-gray';
-  $accordion_content_class = ' text-white';
+  $accordion_content_class = ' text-black';
 }
 
 ?>

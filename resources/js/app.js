@@ -154,4 +154,30 @@ jQuery(function ($) {
       $(this).offset().top - 16 - $('.site-header').outerHeight(true)
     );
   });
+
+  $("a[href*='#']").click(function (e) {
+    e.preventDefault();
+    //var urlhash = $(location).prop('hash');
+    var targetEle = this.hash;
+    var $targetEle = $(targetEle);
+    $('html, body')
+      .stop()
+      .animate(
+        {
+          scrollTop:
+            $targetEle.offset().top - 16 - $('.site-header').outerHeight(true),
+        },
+        500,
+        'swing',
+        function () {
+          window.location.hash = targetEle;
+        }
+      );
+
+    if ($targetEle.hasClass('collapse')) {
+      //console.log('collapse');
+      $('.collapse').find('input[type=checkbox]').prop('checked', false);
+      $targetEle.find('input[type=checkbox]').prop('checked', true);
+    }
+  });
 });

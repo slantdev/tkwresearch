@@ -5328,6 +5328,10 @@ h6,
   scroll-margin-top: -15rem;
 }
 
+.scroll-mt-32 {
+  scroll-margin-top: 8rem;
+}
+
 .scroll-pt-60 {
   scroll-padding-top: 15rem;
 }

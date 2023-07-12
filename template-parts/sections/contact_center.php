@@ -47,6 +47,7 @@ $contact_center = get_sub_field('contact_center');
           }
           foreach ($addresses as $address) :
             $image = $address['image'];
+            $map_iframe = $address['map_iframe'];
             $city = $address['city'];
             $address = $address['address'];
             echo '<div>';
@@ -57,6 +58,15 @@ $contact_center = get_sub_field('contact_center');
                 echo '<div class="aspect-w-3 aspect-h-2 lg:aspect-w-16 lg:aspect-h-6">';
               }
               echo '<img src="' . $image['url'] . '" alt="" class="object-cover h-full w-full rounded-lg" />';
+              echo '</div>';
+            }
+            if ($map_iframe) {
+              if (count($addresses) > 1) {
+                echo '<div class="aspect-w-3 aspect-h-2 rounded-lg overflow-hidden">';
+              } else {
+                echo '<div class="aspect-w-3 aspect-h-2 lg:aspect-w-16 lg:aspect-h-6 rounded-lg overflow-hidden">';
+              }
+              echo $map_iframe;
               echo '</div>';
             }
             echo '<div class="mt-4 lg:mt-10">';

@@ -114,6 +114,7 @@
                     "collapsed": "field_64319e3b1e312",
                     "button_label": "Add Address",
                     "rows_per_page": 20,
+                    "parent_repeater": "field_64319dd41e30d",
                     "sub_fields": [
                         {
                             "key": "field_64319e2c1e311",
@@ -143,6 +144,35 @@
                             "mime_types": "",
                             "preview_size": "medium",
                             "library": "all",
+                            "parent_repeater": "field_64319df21e310"
+                        },
+                        {
+                            "key": "field_64ae477ef5e64",
+                            "label": "Map iFrame",
+                            "name": "map_iframe",
+                            "aria-label": "",
+                            "type": "acfe_code_editor",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_permissions": "",
+                            "acfe_save_meta": 0,
+                            "default_value": "",
+                            "placeholder": "",
+                            "mode": "text\/html",
+                            "lines": 1,
+                            "indent_unit": 4,
+                            "maxlength": "",
+                            "rows": 4,
+                            "max_rows": "",
+                            "return_format": [],
+                            "acfe_settings": "",
+                            "acfe_validate": "",
                             "parent_repeater": "field_64319df21e310"
                         },
                         {
@@ -193,8 +223,7 @@
                             "new_lines": "br",
                             "parent_repeater": "field_64319df21e310"
                         }
-                    ],
-                    "parent_repeater": "field_64319dd41e30d"
+                    ]
                 }
             ]
         },
@@ -269,7 +298,7 @@
     "acfe_form": 1,
     "acfe_meta": "",
     "acfe_note": "",
-    "modified": 1680975324,
+    "modified": 1689143191,
     "acfe_categories": {
         "layout": "Layout"
     }

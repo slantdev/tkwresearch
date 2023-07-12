@@ -44,37 +44,39 @@ if ($text_color == 'white') {
 
 <section id="<?php echo $section_id ?>" class="bg-brand-blue" style="<?php echo $section_style ?><?php echo $section_style_2 ?>">
   <div class="relative <?php echo $section_padding_top . ' ' . $section_padding_bottom ?>">
-    <div class="container max-w-screen-lg text-center">
-      <?php if ($sub_headline) { ?>
-        <h3 class="text-lg pb-4 border-b-2 inline-block mt-12 mx-auto <?php echo $sub_headline_class ?>"><?php echo $sub_headline ?></h3>
-      <?php } ?>
-      <?php if ($headline) { ?>
-        <div class="mt-12 mb-16">
-          <h2 class="text-[34px] font-bold"><?php echo $headline ?></h2>
-        </div>
-      <?php } ?>
-      <?php if ($description) { ?>
-        <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'font-nunito text-lg text-white')); ?>
-      <?php } ?>
-    </div>
-    <?php if ($accordion_item) : ?>
-      <div class="container max-w-screen-lg">
-        <div class="grid grid-cols-1 gap-y-4">
-          <?php foreach ($accordion_item as $item) : ?>
-            <div tabindex="0" class="collapse collapse-plus">
-              <div class="collapse-title text-2xl font-bold border-b-2 py-5 <?php echo $accordion_title_class ?>">
-                <?php echo $item['title'] ?>
-              </div>
-              <div class="collapse-content px-0">
-                <div class="prose prose-lg max-w-none px-4 pt-8 <?php echo $accordion_content_class ?>">
-                  <?php echo $item['description'] ?>
+    <div class="py-6 lg:py-0">
+      <div class="container max-w-screen-lg text-center">
+        <?php if ($sub_headline) { ?>
+          <h3 class="text-lg pb-4 border-b-2 inline-block mt-12 mx-auto <?php echo $sub_headline_class ?>"><?php echo $sub_headline ?></h3>
+        <?php } ?>
+        <?php if ($headline) { ?>
+          <div class="mt-12 mb-8 lg:mb-16">
+            <h2 class="text-3xl lg:text-[34px] font-bold"><?php echo $headline ?></h2>
+          </div>
+        <?php } ?>
+        <?php if ($description) { ?>
+          <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'font-nunito text-lg text-white')); ?>
+        <?php } ?>
+      </div>
+      <?php if ($accordion_item) : ?>
+        <div class="container max-w-screen-lg">
+          <div class="grid grid-cols-1 gap-y-4">
+            <?php foreach ($accordion_item as $item) : ?>
+              <div tabindex="0" class="collapse collapse-plus">
+                <div class="collapse-title text-xl md:text-2xl font-bold border-b-2 py-5 <?php echo $accordion_title_class ?>">
+                  <?php echo $item['title'] ?>
+                </div>
+                <div class="collapse-content px-0">
+                  <div class="prose prose-lg max-w-none px-4 pt-8 <?php echo $accordion_content_class ?>">
+                    <?php echo $item['description'] ?>
+                  </div>
                 </div>
               </div>
-            </div>
-          <?php endforeach; ?>
+            <?php endforeach; ?>
+          </div>
         </div>
-      </div>
-    <?php endif; ?>
+      <?php endif; ?>
+    </div>
     <?php echo $red_line_separator_top ?>
     <?php echo $red_line_separator_bottom ?>
   </div>

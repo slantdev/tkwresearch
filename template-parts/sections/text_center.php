@@ -34,18 +34,18 @@ if ($text_color == 'white') {
 
 <section id="<?php echo $section_id ?>" style="<?php echo $section_style ?>">
   <div class="relative <?php echo $section_padding_top . ' ' . $section_padding_bottom ?>">
-    <div class="container max-w-screen-xl">
+    <div class="container max-w-screen-xl py-6 lg:py-0">
       <div class="text-center max-w-screen-lg mx-auto">
         <?php if ($sub_headline) { ?>
-          <h3 class="text-lg pb-4 border-b-2 inline-block mt-12 mx-auto <?php echo $sub_headline_class ?>"><?php echo $sub_headline ?></h3>
+          <h3 class="text-lg pb-4 border-b-2 inline-block mt-8 lg:mt-12 mx-auto <?php echo $sub_headline_class ?>"><?php echo $sub_headline ?></h3>
         <?php } ?>
         <?php if ($headline) { ?>
-          <div class="mt-12 mb-16">
-            <h2 class="text-[34px] font-bold  <?php echo $headline_class ?>"><?php echo $headline ?></h2>
+          <div class="mt-8 lg:mt-12 mb-12 lg:mb-16">
+            <h2 class="text-3xl lg:text-[34px] font-bold  <?php echo $headline_class ?>"><?php echo $headline ?></h2>
           </div>
         <?php } ?>
         <?php if ($lead_text) { ?>
-          <?php get_template_part('template-parts/components/description', '', array('field' => 'lead_text', 'group' => 'section_intro', 'class' => 'font-nunito text-2xl mx-auto ' . $content_class)); ?>
+          <?php get_template_part('template-parts/components/description', '', array('field' => 'lead_text', 'group' => 'section_intro', 'class' => 'font-nunito text-xl lg:text-2xl mx-auto ' . $content_class)); ?>
         <?php } ?>
       </div>
       <?php if ($content) { ?>

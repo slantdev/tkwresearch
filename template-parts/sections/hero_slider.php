@@ -39,22 +39,22 @@ if ($hero_slider) : ?>
               <div class="flex h-full items-center text-white">
                 <div>
                   <?php if ($headline) : ?>
-                    <div class="pt-20 pb-16 relative">
-                      <div class="w-3/5">
+                    <div class="pt-16 pb-10 lg:pt-20 lg:pb-16 relative">
+                      <div class="w-full xl:w-3/5">
                         <h1 class="hero-headline"><?php echo $headline; ?></h1>
                       </div>
                       <div class="hero-border"></div>
                     </div>
                   <?php endif; ?>
-                  <div class="flex gap-x-14">
+                  <div class="flex flex-col lg:flex-row lg:gap-x-8 xl:gap-x-14">
                     <?php if ($description) : ?>
-                      <div class="w-1/2">
+                      <div class="w-full lg:w-1/2">
                         <div class="hero-description">
                           <?php echo $description; ?>
                         </div>
                       </div>
                     <?php endif; ?>
-                    <div class="w-1/2 pl-20">
+                    <div class="w-full lg:w-1/2 lg:pl-20">
                       <div class="hero-buttons">
                         <?php get_template_part('template-parts/components/buttons', '', array('field' => $buttons, 'class' => 'mt-4 xl:mt-4')); ?>
                       </div>
@@ -70,7 +70,7 @@ if ($hero_slider) : ?>
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
       <?php if ($white_separator_bottom) : ?>
-        <div class="absolute bottom-0 left-0 right-0 w-full z-10">
+        <div class="hidden xl:block absolute bottom-0 left-0 right-0 w-full z-10">
           <div class="container max-w-screen-xl">
             <div class="h-14 bg-white rounded-t-xl w-full"></div>
           </div>

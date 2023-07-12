@@ -22,7 +22,7 @@ if ($flip_column) {
 
 <section id="<?php echo $section_id ?>" style="<?php echo $section_style ?>">
   <div class="relative container max-w-screen-xl mx-auto <?php echo $section_padding_top . ' ' . $section_padding_bottom ?>">
-    <div class="flex flex-wrap lg:flex-nowrap lg:gap-x-16 xl:gap-x-16 3xl:gap-x-24">
+    <div class="flex flex-wrap py-6 lg:py-0 lg:flex-nowrap lg:gap-x-16 xl:gap-x-16 3xl:gap-x-24">
       <div class="w-full <?php echo $column_image_class ?>">
         <?php get_template_part('template-parts/components/heading', '', array('field' => 'heading', 'class' => 'leading-[1.3] font-bold')); ?>
         <?php get_template_part('template-parts/components/image', '', array('aspect_w' => '1', 'aspect_h' => '1', 'class' => 'h-full w-full object-center object-cover')); ?>

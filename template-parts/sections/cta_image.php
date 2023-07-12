@@ -32,7 +32,7 @@ if ($text_color == 'white') {
 
 <section id="<?php echo $section_id ?>" style="<?php echo $section_style ?>">
   <div class="relative container max-w-screen-xl mx-auto <?php echo $section_padding_top . ' ' . $section_padding_bottom ?>">
-    <div class="flex flex-wrap lg:flex-nowrap lg:gap-x-16 xl:gap-x-16 3xl:gap-x-24 items-center">
+    <div class="py-8 lg:py-0 flex flex-wrap lg:flex-nowrap lg:gap-x-16 xl:gap-x-16 3xl:gap-x-24 items-center">
       <div class="w-full order-1 <?php echo $column_image_class ?>">
         <?php if ($cta_image) : ?>
           <div class="mx-auto">
@@ -42,14 +42,14 @@ if ($text_color == 'white') {
       </div>
       <div class="w-full order-2 <?php echo $column_text_class ?>">
         <?php if ($cta_headline) : ?>
-          <h3 class="text-white text-[50px] font-semibold leading-[1.1] <?php echo $headline_class ?>"><?php echo $cta_headline ?></h3>
+          <h3 class="text-white text-4xl xl:text-[50px] font-semibold leading-[1.1] mt-8 lg:mt-0 <?php echo $headline_class ?>"><?php echo $cta_headline ?></h3>
         <?php endif; ?>
         <?php if ($cta_text) : ?>
-          <div class="text-white text-2xl mt-10  <?php echo $text_class ?>"><?php echo $cta_text ?></div>
+          <div class="text-white text-xl xl:text-2xl mt-8 xl:mt-10  <?php echo $text_class ?>"><?php echo $cta_text ?></div>
         <?php endif; ?>
         <?php if ($cta_link) : ?>
-          <div class="mt-10">
-            <a href="<?php echo $cta_link['url'] ?>" target="<?php echo $cta_link['target'] ?>" class="text-xl underline font-bold hover:no-underline  <?php echo $link_class ?>"><?php echo $cta_link['title'] ?></a>
+          <div class="mt-8 xl:mt-10">
+            <a href="<?php echo $cta_link['url'] ?>" target="<?php echo $cta_link['target'] ?>" class="text-lg xl:text-xl underline font-bold hover:no-underline  <?php echo $link_class ?>"><?php echo $cta_link['title'] ?></a>
           </div>
         <?php endif; ?>
       </div>

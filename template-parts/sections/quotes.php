@@ -18,7 +18,7 @@ $quote_author = $quotes['quote_author'];
 
 <section id="<?php echo $section_id ?>" style="<?php echo $section_style ?>">
   <div class="relative container max-w-screen-xl mx-auto <?php echo $section_padding_top . ' ' . $section_padding_bottom ?>">
-    <div class="flex flex-wrap lg:flex-nowrap lg:gap-x-16 xl:gap-x-16 3xl:gap-x-24">
+    <div class="flex flex-wrap py-8 lg:py-0 lg:flex-nowrap lg:gap-x-16 xl:gap-x-16 3xl:gap-x-24">
       <div class="w-full order-1 <?php echo $column_image_class ?>">
         <?php if ($quote_image) : ?>
           <div class="max-w-[360px] mx-auto">
@@ -28,15 +28,15 @@ $quote_author = $quotes['quote_author'];
           </div>
         <?php endif; ?>
       </div>
-      <div class="w-full order-2 <?php echo $column_text_class ?>">
+      <div class="w-full mt-10 lg:mt-0 order-2 <?php echo $column_text_class ?>">
         <?php if ($quote_text) : ?>
-          <div class="relative font-semibold italic text-brand-red text-[36px] leading-tight">
-            <div class="absolute -left-14 -top-8 text-[100px] leading-none">&#8220;</div>
+          <div class="relative font-semibold italic text-brand-red text-2xl lg:text-[36px] leading-tight pl-4 lg:pl-0">
+            <div class="absolute -left-0 text-[64p] lg:-left-14 lg:-top-8 lg:text-[100px] leading-none">&#8220;</div>
             <?php echo $quote_text ?>
           </div>
         <?php endif; ?>
         <?php if ($quote_author) : ?>
-          <div class="border-t border-gray-500 pt-3 font-semibold italic mt-10 text-black text-xl">
+          <div class="border-t border-gray-500 pt-3 font-semibold italic mt-6 lg:mt-10 text-black text-xl">
             <?php echo $quote_author ?>
           </div>
         <?php endif; ?>

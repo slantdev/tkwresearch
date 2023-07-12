@@ -27,6 +27,18 @@
     $(".main-nav--ul > li").hover(function() {
     }, function() {
     });
+    $("#mobilemenu-open").click(function(e) {
+      e.preventDefault();
+      $("#mobilemenu").removeClass("translate-x-full");
+      $("#mobilemenu-overlay").removeClass("invisible opacity-0").addClass("visible opacity-100");
+      $("body").addClass("overflow-y-hidden");
+    });
+    $("#mobilemenu-close, #mobilemenu-overlay").click(function(e) {
+      e.preventDefault();
+      $("#mobilemenu").addClass("translate-x-full");
+      $("#mobilemenu-overlay").removeClass("visible opacity-100").addClass("invisible opacity-0");
+      $("body").removeClass("overflow-y-hidden");
+    });
     $("#header-search-button").on("click", function() {
       $("#header-search").toggleClass("show");
       $("#searchform-input").val("");

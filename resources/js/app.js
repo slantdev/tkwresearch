@@ -144,4 +144,14 @@ jQuery(function ($) {
       },
     });
   });
+
+  // Accordion
+  $('.collapse').click(function (e) {
+    e.preventDefault();
+    $('.collapse').find('input[type=checkbox]').prop('checked', false);
+    $(this).find('input[type=checkbox]').prop('checked', true);
+    $('html, body').scrollTop(
+      $(this).offset().top - 16 - $('.site-header').outerHeight(true)
+    );
+  });
 });

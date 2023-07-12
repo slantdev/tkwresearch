@@ -5316,6 +5316,22 @@ h6,
   cursor: pointer;
 }
 
+.scroll-mt-28 {
+  scroll-margin-top: 7rem;
+}
+
+.scroll-mt-60 {
+  scroll-margin-top: 15rem;
+}
+
+.-scroll-mt-60 {
+  scroll-margin-top: -15rem;
+}
+
+.scroll-pt-60 {
+  scroll-padding-top: 15rem;
+}
+
 .list-none {
   list-style-type: none;
 }
@@ -5326,10 +5342,6 @@ h6,
 
 .list-decimal {
   list-style-type: decimal;
-}
-
-.grid-flow-col {
-  grid-auto-flow: column;
 }
 
 .grid-cols-1 {
@@ -8024,6 +8036,10 @@ h6,
   margin-top: 0.125rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .site-header,
 #top-nav .top-nav--container,
 #top-nav .top-nav--ul,
@@ -8864,6 +8880,10 @@ footer {
     line-height: 1.75rem;
   }
 
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .lg\:text-\[34px\] {
     font-size: 34px;
   }
@@ -8878,10 +8898,6 @@ footer {
 
   .lg\:text-\[100px\] {
     font-size: 100px;
-  }
-
-  .lg\:text-\[40px\] {
-    font-size: 40px;
   }
 
   .lg\:aspect-w-16 {
@@ -8972,10 +8988,6 @@ footer {
 
   .xl\:flex {
     display: flex;
-  }
-
-  .xl\:grid {
-    display: grid;
   }
 
   .xl\:hidden {

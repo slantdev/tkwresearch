@@ -1,3 +1,6 @@
+html {
+  @apply scroll-smooth;
+}
 .site-header,
 #top-nav .top-nav--container,
 #top-nav .top-nav--ul,

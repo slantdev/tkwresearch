@@ -62,7 +62,8 @@ if ($text_color == 'white') {
         <div class="container max-w-screen-lg">
           <div class="grid grid-cols-1 gap-y-4">
             <?php foreach ($accordion_item as $item) : ?>
-              <div tabindex="0" class="collapse collapse-plus">
+              <div class="collapse collapse-plus">
+                <input type="checkbox" />
                 <div class="collapse-title text-xl md:text-2xl font-bold border-b-2 py-5 <?php echo $accordion_title_class ?>">
                   <?php echo $item['title'] ?>
                 </div>

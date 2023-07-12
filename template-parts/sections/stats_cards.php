@@ -19,6 +19,10 @@ $overlay_style = '';
 if ($background_overlay) {
   $overlay_style = ' background-color: ' . $background_overlay . ';';
 }
+$stats_cards_class = '';
+if ($background_url) {
+  $stats_cards_class = ' lg:translate-y-1/4';
+}
 
 ?>
 
@@ -30,26 +34,28 @@ if ($background_overlay) {
         <img src="<?php echo $background_url ?>" alt="" class="object-bottom object-cover h-full w-full opacity-100">
       </div>
     <?php endif; ?>
-    <div class="container max-w-screen-xl relative pt-16 xl:pt-32 pb-0">
-      <div class="flex flex-col lg:flex-row">
-        <div class="w-full lg:w-2/3">
-          <?php if ($sub_headline) { ?>
-            <h4><span class="inline-block pb-3 border-b-2 border-brand-red text-lg text-black font-medium"><?php echo $sub_headline ?></span></h4>
-          <?php } ?>
-          <?php if ($headline) { ?>
-            <h3 class="text-[34px] leading-tight font-bold text-brand-red mt-6 mb-6"><?php echo $headline ?></h3>
-          <?php } ?>
-          <?php if ($description) { ?>
-            <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'text-lg text-brand-gray')); ?>
-          <?php } ?>
-        </div>
-        <div class="hidden w-full lg:w-1/3">
-          <?php echo tkw_icon(array('icon' => 'play-button', 'group' => 'utilities', 'size' => '120', 'class' => 'text-brand-blue mx-auto mt-10')); ?>
+    <?php if ($sub_headline || $headline || $description) : ?>
+      <div class="container max-w-screen-xl relative pt-16 xl:pt-32 pb-0">
+        <div class="flex flex-col lg:flex-row">
+          <div class="w-full lg:w-2/3">
+            <?php if ($sub_headline) { ?>
+              <h4><span class="inline-block pb-3 border-b-2 border-brand-red text-lg text-black font-medium"><?php echo $sub_headline ?></span></h4>
+            <?php } ?>
+            <?php if ($headline) { ?>
+              <h3 class="text-[34px] leading-tight font-bold text-brand-red mt-6 mb-6"><?php echo $headline ?></h3>
+            <?php } ?>
+            <?php if ($description) { ?>
+              <?php get_template_part('template-parts/components/description', '', array('field' => 'description', 'class' => 'text-lg text-brand-gray')); ?>
+            <?php } ?>
+          </div>
+          <div class="hidden w-full lg:w-1/3">
+            <?php echo tkw_icon(array('icon' => 'play-button', 'group' => 'utilities', 'size' => '120', 'class' => 'text-brand-blue mx-auto mt-10')); ?>
+          </div>
         </div>
       </div>
-    </div>
+    <?php endif; ?>
     <?php if ($stats_cards) : ?>
-      <div class="container max-w-screen-xl relative pt-4 lg:pt-0 pb-16 lg:pb-0 lg:translate-y-1/4">
+      <div class="container max-w-screen-xl relative pt-4 lg:pt-0 pb-16 lg:pb-0 <?php echo $stats_cards_class ?>">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-x-12">
           <?php foreach ($stats_cards as $card) : ?>
             <div class="bg-white rounded-lg p-6 lg:p-10 text-center shadow-[0_0_20px_rgb(225,228,237,1)]">

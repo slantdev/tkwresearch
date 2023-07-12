@@ -67,10 +67,10 @@ $powered_by = $copyright['powered_by'];
                   <div class="flex gap-3">
                     <?php if ($contact['country'] == 'au') {
                       //echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
-                      echo tkw_icon(array('icon' => 'pinmap', 'group' => 'utilities', 'size' => '24', 'class' => 'mt-0.5'));
+                      echo tkw_icon(array('icon' => 'pinmap', 'group' => 'utilities', 'size' => '24', 'class' => 'mt-0.5 flex-none'));
                     } else if ($contact['country'] == 'nz') {
                       //echo '<img class="w-8 h-8" src="' . tkw_asset('images/flags/au.png') . '" alt="">';
-                      echo tkw_icon(array('icon' => 'pinmap', 'group' => 'utilities', 'size' => '24', 'class' => 'mt-0.5'));
+                      echo tkw_icon(array('icon' => 'pinmap', 'group' => 'utilities', 'size' => '24', 'class' => 'mt-0.5 flex-none'));
                     } ?>
                     <div class="grow">
                       <?php if ($contact['heading']) : ?>

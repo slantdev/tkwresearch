@@ -5468,6 +5468,10 @@ body {
     font-size: 100px;
   }
 
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .lg\:aspect-w-16 {
     position: relative;
     padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);

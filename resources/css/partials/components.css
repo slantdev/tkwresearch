@@ -1,7 +1,7 @@
 .breadcrumb {
   @apply text-base text-slate-800;
   > span {
-    @apply flex gap-x-3;
+    @apply flex gap-x-3 flex-wrap;
   }
   a {
     @apply hover:text-brand-red;

@@ -16,7 +16,7 @@
   <div class="container max-w-screen-xl relative z-10 pt-52 xl:pt-[216px] pb-16 xl:pb-10 h-full">
     <div class="flex flex-col md:flex-row h-full items-center text-white">
       <div class="w-full max-w-prose">
-        <h1 class="font-bold text-[40px] lg:text-[50px] leading-tight"><?php echo get_the_title() ?></h1>
+        <h1 class="font-bold text-3xl lg:text-[40px] xl:text-[50px] leading-tight"><?php echo get_the_title() ?></h1>
         <div class="mt-4 lg:mt-6 text-base lg:text-lg"><time datetime="<?php echo get_the_date('c'); ?>" itemprop="datePublished" class="text-lg"><?php echo get_the_date(); ?></time></div>
       </div>
     </div>

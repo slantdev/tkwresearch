@@ -22,7 +22,7 @@ $size = 'full';
     <div class="py-6 lg:py-0">
       <?php if ($headline) : ?>
         <div class="container max-w-screen-xl">
-          <?php get_template_part('template-parts/components/heading', '', array('field' => 'headline', 'class' => 'leading-tight font-bold text-black mt-6 mb-10 text-center')); ?>
+          <?php get_template_part('template-parts/components/heading', '', array('field' => 'headline', 'class' => 'text-3xl text-[34px] leading-tight font-bold text-black mt-6 mb-10 text-center')); ?>
         </div>
       <?php endif; ?>
       <?php if ($logo_gallery) : ?>

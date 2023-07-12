@@ -55,11 +55,11 @@ $description = get_sub_field('description');
               ?>
               <?php echo '<div class="relative block p-4 lg:p-8 text-center">'; ?>
               <?php if ($icon_svg) { ?>
-                <?php echo tkw_icon(array('icon' => $icon_svg, 'group' => 'content', 'size' => '80', 'class' => 'text-brand-blue mx-auto')); ?>
+                <?php echo tkw_icon(array('icon' => $icon_svg, 'group' => 'content', 'size' => '80', 'class' => 'text-brand-blue mx-auto mb-8')); ?>
               <?php } ?>
 
               <?php if ($title) { ?>
-                <h5 class="text-slate-800 font-bold text-[22px] mt-8 mb-6"><?php echo $title ?></h5>
+                <h5 class="text-slate-800 font-bold text-[22px] mb-6"><?php echo $title ?></h5>
               <?php } ?>
 
               <?php if ($description) { ?>

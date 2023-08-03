@@ -156,7 +156,7 @@ jQuery(function ($) {
   });
 
   $("a[href*='#']").click(function (e) {
-    e.preventDefault();
+    //e.preventDefault();
     //var urlhash = $(location).prop('hash');
     var targetEle = this.hash;
     var $targetEle = $(targetEle);

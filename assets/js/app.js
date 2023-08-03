@@ -39,6 +39,11 @@
       $("#mobilemenu-overlay").removeClass("visible opacity-100").addClass("invisible opacity-0");
       $("body").removeClass("overflow-y-hidden");
     });
+    $("#mobilemenu a").click(function(e) {
+      $("#mobilemenu").addClass("translate-x-full");
+      $("#mobilemenu-overlay").removeClass("visible opacity-100").addClass("invisible opacity-0");
+      $("body").removeClass("overflow-y-hidden");
+    });
     $("#header-search-button").on("click", function() {
       $("#header-search").toggleClass("show");
       $("#searchform-input").val("");

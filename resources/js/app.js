@@ -69,6 +69,13 @@ jQuery(function ($) {
       .addClass('invisible opacity-0');
     $('body').removeClass('overflow-y-hidden');
   });
+  $('#mobilemenu a').click(function (e) {
+    $('#mobilemenu').addClass('translate-x-full');
+    $('#mobilemenu-overlay')
+      .removeClass('visible opacity-100')
+      .addClass('invisible opacity-0');
+    $('body').removeClass('overflow-y-hidden');
+  });
 
   // Header Search
   $('#header-search-button').on('click', function () {

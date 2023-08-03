@@ -12,6 +12,8 @@ $copyright_info = $copyright['copyright_info'];
 $powered_by = $copyright['powered_by'];
 ?>
 
+<?php get_template_part('template-parts/components/mobilemenu'); ?>
+
 <footer class="bg-[#545454]">
   <div class="container max-w-screen-xl pt-16 pb-16 lg:pb-24">
 
@@ -118,5 +120,3 @@ $powered_by = $copyright['powered_by'];
     </div>
   </section>
 </footer>
-
-<?php get_template_part('template-parts/components/mobilemenu'); ?>
